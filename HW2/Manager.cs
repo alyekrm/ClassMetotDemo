@@ -7,13 +7,13 @@ namespace HW2
     class Manager : IManager
     {
 
-        public void Add(IBasicInfo basicInfo, List<IBasicInfo> dataBase)
+        public void Add(BasicInfo basicInfo, List<BasicInfo> dataBase)
         {
             dataBase.Add(basicInfo);
             Console.WriteLine("Id numarası " + basicInfo.Id + " olarak tanımlandı.");
         }
 
-        public void Delete(IBasicInfo basicInfo, List<IBasicInfo> dataBase)
+        public void Delete(BasicInfo basicInfo, List<BasicInfo> dataBase)
         {
             foreach (var item in dataBase)
             {
@@ -27,18 +27,18 @@ namespace HW2
             Console.WriteLine("Id numarası " + basicInfo.Id + " olan indirim iptal edildi.");
         }
 
-        public void List(List<IBasicInfo> dataBase)
+        public void List(List<BasicInfo> dataBase)
         {
             foreach (var item in dataBase)
             {
-                Console.WriteLine(item.Id+" "+item.Name);
+                Console.WriteLine(item.Id+" "+item.Name+" " +item.NationalityId+" "+item.Price+" " +item.Surname);
                 
             }
             
         }
 
 
-        public void Update(IBasicInfo basicInfo, List<IBasicInfo> dataBase)
+        public void Update(BasicInfo basicInfo, List<BasicInfo> dataBase)
         {
             foreach (var item in dataBase)
             {
@@ -48,6 +48,8 @@ namespace HW2
                     string oldName = item.Name;
                     item.Name = Console.ReadLine();
                     Console.WriteLine("{0} listeden {1} olarak değiştirildi silindi",oldName, basicInfo.Id);
+                    
+
                 }
                 else
                 {

@@ -6,7 +6,7 @@ namespace HW2
 {
     class Menu
     {
-        public void New(GamerManager gamerManager,OfferManager offerManager, List<IBasicInfo> dataBase)
+        public void New(GamerManager gamerManager,OfferManager offerManager, List<BasicInfo> dataBase)
         {
             Console.WriteLine("Yeni oyuncu eklemek için 1");
             Console.WriteLine("Database listelemek için 2");
@@ -57,7 +57,7 @@ namespace HW2
             }
  
         }
-        public void NewGamer(GamerManager gamerManager,OfferManager offerManager, List<IBasicInfo> dataBase)
+        public void NewGamer(GamerManager gamerManager,OfferManager offerManager, List<BasicInfo> dataBase)
         {
             
                    Console.WriteLine("Yeni oyuncu girişi");
@@ -87,7 +87,7 @@ namespace HW2
                    }
         }
        
-        public void NewOffer(GamerManager gamerManager, OfferManager offerManager, List<IBasicInfo> dataBase)
+        public void NewOffer(GamerManager gamerManager, OfferManager offerManager, List<BasicInfo> dataBase)
         {
             Console.WriteLine("Yeni teklif girişi");
             Offer newOffer = new Offer() { };

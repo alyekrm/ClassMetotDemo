@@ -14,7 +14,7 @@ namespace HW2
             
             OfferManager offerManager = new OfferManager();
 
-            List<IBasicInfo> dataBase = new List<IBasicInfo>() { };
+            List<BasicInfo> dataBase = new List<BasicInfo>() { };
 
             Menu menu = new Menu();
 

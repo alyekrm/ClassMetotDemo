@@ -7,9 +7,9 @@ namespace HW2
     interface IManager
     {
         
-        void Add(IBasicInfo basicInfo,List<IBasicInfo> dataBase);
-        void Delete(IBasicInfo basicInfo, List<IBasicInfo> dataBase);
-        void Update(IBasicInfo basicInfo, List<IBasicInfo> dataBase);
-        void List(List<IBasicInfo> dataBase);
+        void Add(BasicInfo basicInfo,List<BasicInfo> dataBase);
+        void Delete(BasicInfo basicInfo, List<BasicInfo> dataBase);
+        void Update(BasicInfo basicInfo, List<BasicInfo> dataBase);
+        void List(List<BasicInfo> dataBase);
     }
 }

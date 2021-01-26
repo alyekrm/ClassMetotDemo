@@ -4,10 +4,11 @@ using System.Text;
 
 namespace HW2
 {
-    class Game:IBasicInfo
+    class Game:BasicInfo
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public double Price { get; set; }
+        //public int Id { get; set; }
+        //public string Name { get; set; }
+        //public double Price { get; set; }
+        public override double Price { get => base.Price; set => base.Price = value; }
     }
 }

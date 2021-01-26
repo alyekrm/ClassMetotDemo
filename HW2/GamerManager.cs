@@ -15,7 +15,7 @@ namespace HW2
             _validation = validation;
         }
 
-        public void Add(IBasicInfo basicInfo, List<IBasicInfo> dataBase)
+        public void Add(BasicInfo basicInfo, List<BasicInfo> dataBase)
         {
             if (_validation.Validate(basicInfo))
             {

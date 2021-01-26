@@ -4,10 +4,8 @@ using System.Text;
 
 namespace HW2
 {
-    class Offer:IBasicInfo
+    class Offer:BasicInfo
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public double Discount { get; set; }
+        public override double Discount { get => base.Discount; set => base.Discount = value; }
     }
 }

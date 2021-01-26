@@ -4,12 +4,11 @@ using System.Text;
 
 namespace HW2
 {
-    class Gamer : IBasicInfo
+    class Gamer : BasicInfo
     {
-        public int Id { get; set ; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public string NationalityId { get; set; }
-      
+
+        public override string Surname { get => base.Surname; set => base.Surname = value; }
+        public override string NationalityId { get => base.NationalityId; set => base.NationalityId = value; }
+
     }
 }
