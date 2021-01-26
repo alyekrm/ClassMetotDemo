@@ -4,9 +4,10 @@ using System.Text;
 
 namespace HW2
 {
-    class GamerManager : IManager
+    class GamerManager : Manager
     {
-
+      
+        
         private IValidation _validation;
 
         public GamerManager(IValidation validation)
@@ -14,28 +15,20 @@ namespace HW2
             _validation = validation;
         }
 
-        public void Add(IBasicInfo basicInfo)
+        public void Add(IBasicInfo basicInfo, List<IBasicInfo> dataBase)
         {
             if (_validation.Validate(basicInfo))
             {
                 Console.WriteLine(basicInfo.Name + " kullanıcı adıyla "+basicInfo.Id+" id numarası ile sisteme eklendi.");
+                dataBase.Add(basicInfo);
             }
             else
             {
                 throw new NotImplementedException();
-            }
-            
+            }            
         }
 
-        public void Delete(IBasicInfo basicInfo)
-        {
-            Console.WriteLine(basicInfo.Id + "id numaralı kullanıcı adi sistemden silindi.");
-        }
-
-        public void Update(IBasicInfo basicInfo)
-        {
-            Console.WriteLine(basicInfo.Id + " id numaralı kullanıcı verileri güncellendi.");
-        }
+     
     }
    
 }

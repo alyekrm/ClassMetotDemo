@@ -10,5 +10,6 @@ namespace HW2
         public string Name { get; set; }
         public string Surname { get; set; }
         public string NationalityId { get; set; }
+      
     }
 }

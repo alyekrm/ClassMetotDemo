@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HW2
 {
@@ -13,28 +14,45 @@ namespace HW2
             
             OfferManager offerManager = new OfferManager();
 
+            List<IBasicInfo> dataBase = new List<IBasicInfo>() { };
+
+            Menu menu = new Menu();
+
+            Game game = new Game() { Id = 1, Name = "game", Price = 14.99 };
+
             Gamer gamer1 = new Gamer()
             {
                 Id = 1,
                 Name = "gamer/oyuncu",
                 Surname = "gamer",
-                NationalityId = "123456798"
+                NationalityId = "123456798",
+   
             };
-
-            Game game = new Game() { Id = 1, Name = "game", Price = 14.99 };
-
+            
             Offer offer = new Offer() { Id = 1, Name = "offer", Discount = 5.5 };
 
-            gamerManager.Add(gamer1);
-            
+            gamerManager.Add(gamer1,dataBase);
+
             gameManager.Sell(gamer1, game);
-           
-            offerManager.Add(offer);
-           
+
+            offerManager.Add(offer,dataBase);
+
+            gamerManager.List(dataBase);
+
             gameManager.Sell(gamer1, game, offer);
+
+            offerManager.List(dataBase);
+            Console.WriteLine("-----------");
+
+ 
+            menu.New(gamerManager, offerManager,dataBase);
 
 
 
         }
+       
+      
+
     }
 }
+

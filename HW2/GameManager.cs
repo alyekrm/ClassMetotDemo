@@ -12,6 +12,7 @@ namespace HW2
             
             if(offer != null)
             {
+
                 Console.WriteLine(gamer.Name + " kullanıcısına " + game.Name + " oyunu " + offer.Discount +
                 " indirim miktarı düşülerek " + game.Price + " yerine " + (game.Price - offer.Discount) + " satıldı.");
             }
