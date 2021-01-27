@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP2", "OOP2\OOP2.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP3", "OOP3\OOP3.csproj", "{089A0DDD-5ABA-41D6-A3F3-F15CBBA82208}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW2", "HW2\HW2.csproj", "{5D4DBAFE-BD68-4F63-8748-9F47AA2D7A68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW2", "HW2\HW2.csproj", "{5D4DBAFE-BD68-4F63-8748-9F47AA2D7A68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calısmalanı", "calısmalanı\calısmalanı.csproj", "{6230E769-680B-4E5B-B721-47502DB9D966}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "calısmalanı", "calısmalanı\calısmalanı.csproj", "{6230E769-680B-4E5B-B721-47502DB9D966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQL", "SQL\SQL.csproj", "{924BC4D4-E810-4F88-BE29-F4500E3738A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{6230E769-680B-4E5B-B721-47502DB9D966}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6230E769-680B-4E5B-B721-47502DB9D966}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6230E769-680B-4E5B-B721-47502DB9D966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{924BC4D4-E810-4F88-BE29-F4500E3738A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924BC4D4-E810-4F88-BE29-F4500E3738A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924BC4D4-E810-4F88-BE29-F4500E3738A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924BC4D4-E810-4F88-BE29-F4500E3738A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
